@@ -1,5 +1,8 @@
 FROM n8nio/n8n:latest
 
 USER root
-RUN apk add --no-cache poppler-utils
+
+RUN apk update && apk add --no-cache poppler
+
 USER node
+
